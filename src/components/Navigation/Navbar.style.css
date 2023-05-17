@@ -1,0 +1,31 @@
+
+.navbar {
+    display: flex;
+    position: sticky;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 1rem;
+}
+
+.navbar_title {
+    font-size: 2rem;
+    margin-left: 6rem;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+.navbar_links {
+    text-decoration: none;
+    display: flex;
+    gap: 2.8rem;
+    margin-right: 6rem;
+}
+
+.nav_li{
+    text-decoration: none;
+    color: #000;
+    gap: 1rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
