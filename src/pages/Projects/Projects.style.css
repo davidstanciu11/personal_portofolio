@@ -1,0 +1,84 @@
+.projects {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.projects_header_title {
+  letter-spacing: 0.25px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #2cb67d;
+}
+
+.projects_header_desc {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 6rem;
+}
+
+.project_container {
+  width: 90rem;
+  background-color: #fffffe;
+  height: 40rem;
+  display: flex;
+  border-radius: 2rem;
+  margin-top: 4rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.project_img {
+    width: 53rem;
+    height: 26rem;
+    border-radius: 15px;
+    margin-top: 6rem;
+    margin-left: 2rem;
+    object-fit: cover;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.project_title {
+    font-size: 1.7rem;
+    color: rgb(45,46,50);
+    letter-spacing: 0.25px;
+}
+
+.project_desc {
+    max-width: 32rem;
+    margin-top: 6.5rem;
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project_par {
+    font-size: 1.5rem;
+    color: gray;
+    margin-top: 1rem;
+}
+
+.project_links {
+    display: flex;
+    margin-top: 5rem;
+    align-items: center;
+  }
+
+  .project_github {
+    display: flex;
+    align-items: center;
+  }
+
+.links_to {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: rgb(45,46,50);
+}
