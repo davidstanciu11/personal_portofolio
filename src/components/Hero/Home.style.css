@@ -1,0 +1,102 @@
+.home_section {
+  width: 100vw;
+  height: 90vh;
+}
+
+.main_content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 10rem;
+  padding: 0 4rem;
+}
+
+.hero_title {
+  font-size: 5rem;
+  letter-spacing: 0.25px;
+  color: rgb(45, 46, 50);
+}
+
+.home_description {
+  display: flex;
+  max-width: 60rem;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+.hero_par {
+  font-size: 1.9rem;
+  color: rgb(107, 107, 107);
+}
+
+.content {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile_pic {
+  width: 35rem;
+  height: 35rem;
+  object-fit: cover;
+  margin-left: 5rem;
+  border: 3px solid rgb(45, 46, 50);
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  transition: all 1s ease-in-out;
+  animation: moving 8s ease-in-out infinite;
+  background-repeat: no-repeat;
+}
+
+.profile_links {
+  display: flex;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.profileLinks {
+  width: 4rem;
+  object-fit: contain;
+}
+
+@keyframes moving {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
+
+.tehnologies {
+    display: flex;
+    flex-direction: row;
+    align-items:  center;
+}
+
+.tech_names {
+    margin-left: 4rem;
+    font-size: 1.8rem;
+    letter-spacing: 0.25px;
+}
+
+.line_tech {
+    color: rgb(97, 97, 97);
+    font-weight: 400;
+    margin-left: 2rem;
+}
+
+.tech_icon {
+    width: 4.5rem;
+    height: 4.5rem;
+    object-fit: cover;
+    margin-left: 1rem;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.09);
+}
