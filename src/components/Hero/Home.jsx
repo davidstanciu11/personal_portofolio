@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <>
-      <section className="home_section">
+      <section className="home_section" id="home">
         <div className="container">
           <div className="content">
             <div className="main_content">

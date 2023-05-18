@@ -4,10 +4,25 @@
     align-items: center;
     justify-content: space-between;
     width: 100vw;
+    top: 0;
     padding: 1rem;
     background-color: #FFFFFF;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+
+nav {
+    transition: .3s;
+}
+
+nav .sticky {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.active {
+    font-weight: bold;
+  }
 
 .navbar_title {
     font-size: 1.9rem;
@@ -30,6 +45,7 @@
     font-size: 1.7rem;
     font-weight: 500;
     transition: all 0.3s;
+    cursor: pointer;
 }
 
 .nav_li:hover {

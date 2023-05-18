@@ -1,2 +1,75 @@
+.about {
+  display: flex;
+  max-width: 90vw;
+  height: 80vh;
+  background-color: #fffffe;
+  justify-content: center;
+  margin: 3rem 5rem 5rem 6rem;
+  border-radius: 10px;
+}
 
+.about_container {
+  display: flex;
+  margin-top: 10rem;
+  position: relative;
+}
 
+.laptop_img {
+  width: 35rem;
+  height: 35rem;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.about_desc_title {
+  font-size: 2rem;
+}
+
+.about_desc {
+  max-width: 80rem;
+  padding: 5px 25px;
+  padding-left: 5rem;
+}
+
+.about_par_title {
+  font-size: 1.8rem;
+  color: #2cb67d;
+  padding-bottom: 1rem;
+  font-weight: bold;
+}
+
+.about_par {
+  color: #626262;
+  font-size: 1.8rem;
+  padding-right: 6rem;
+  padding-top: 1rem;
+}
+
+.developer_icon {
+  width: 13rem;
+  animation: rotation 7s linear infinite;
+}
+
+@keyframes rotation {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.circle_dev {
+  border-radius: 50%;
+  width: 13rem;
+  height: 13rem;
+  top: 25rem;
+  left: 25rem;
+  position: absolute;
+  background-color: white;
+  overflow: hidden;
+}
+
+.learning_icon_circle {
+  font-size: 5rem;
+  position: absolute;
+  top: 27.5rem;
+  left: 28.25rem;
+}
