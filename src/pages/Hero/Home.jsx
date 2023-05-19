@@ -49,12 +49,13 @@ function Home() {
               <h3 className="tech_names">
                 Tech Stack <span className="line_tech">|</span>
               </h3>
+              <div className="tech_icons_flex">
               <img src={html} alt="htmlIcon"className="tech_icon"/>
               <img src={CSS} alt="cssIcon"className="tech_icon"/>
               <img src={js} alt="jsIcon"className="tech_icon"/>
               <img src={react} alt="reactIcon"className="tech_icon"/>
               <img src={git} alt="gitIcon"className="tech_icon"/>
-            </div>
+            </div></div>
           </div>
         </div>
       </section>

@@ -91,13 +91,71 @@
 }
 
 .tech_icon {
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 5rem;
+    height: 5rem;
     object-fit: cover;
     margin-left: 1rem;
     background-color: white;
     border-radius: 50%;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,.09);
+    padding: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,.09);
 }
 
+.tech_icons_flex {
+  display: flex;
+}
+
+
+@media screen and (max-width: 480px) {  
+  .main_content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    margin-top: 8rem;
+    padding: 0 4rem;
+  }
+
+  .profile_pic {
+    width: 25rem;
+    height: 25rem;
+    object-fit: cover;
+    margin-left: 3.5rem;
+    border: 3px solid rgb(45, 46, 50);
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    transition: all 1s ease-in-out;
+    animation: moving 8s ease-in-out infinite;
+    background-repeat: no-repeat;
+  }
+
+  .hero_title {
+    font-size: 4rem;
+    letter-spacing: 0.25px;
+    color: rgb(45, 46, 50);
+    text-align: center;
+  }
+  .hero_par {
+    font-size: 1.9rem;
+    color: rgb(107, 107, 107);
+    text-align: center;
+    margin-top: 1.6rem;
+  }
+
+  .tech_icons_flex {
+    display: flex;
+    margin-top: 1rem;
+  }
+
+  .tehnologies{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .profile_links {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+    gap: 1rem;
+  }
+}

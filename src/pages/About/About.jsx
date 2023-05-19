@@ -8,7 +8,7 @@ function About() {
   return (
     <>
       <section className="about" id="about">
-        <div className="about_container">
+        
           <div className="about_img">
             <img src={LaptopImg} alt="laptopImg" className="laptop_img" />
             <span className="circle_dev"><img src={Icon} alt="icon" className="developer_icon" /></span>
@@ -33,7 +33,6 @@ function About() {
             </p>
             <Link to={""}><button className="btn_dark">Download Resume</button></Link>
           </div>
-        </div>
       </section>
     </>
   );

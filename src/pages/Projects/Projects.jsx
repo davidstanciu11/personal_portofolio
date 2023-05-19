@@ -20,11 +20,9 @@ function Projects() {
           </h3>
         </div>{" "}
         <div className="project_container">
-          <div className="project_image">
             <Link to={"https://outstock-react-project.netlify.app"}>
               <img src={outstock} alt="projectPhoto" className="project_img" />
             </Link>
-          </div>
           <div className="project_desc project_desc_outstock">
             <h3 className="project_title">OutStock 🛒 </h3>
             <p className="project_par">
@@ -168,9 +166,9 @@ function Projects() {
             </Link>
           </div>
           <div className="project_desc">
-            <h3 className="project_title">Slack Replica </h3>
+            <h3 className="project_title">Slack Replica 🧩</h3>
             <p className="project_par">
-              Slack Replica aims to recreate the visual and interactive
+              Slack Replica 🧩 aims to recreate the visual and interactive
               elements of the original Slack website, offering a realistic user
               experience and demonstrating the power of front-end web
               development.

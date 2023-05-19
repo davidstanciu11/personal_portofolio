@@ -1,17 +1,14 @@
 .about {
   display: flex;
   max-width: 90vw;
-  height: 80vh;
   background-color: #fffffe;
   justify-content: center;
-  margin: 3rem 5rem 5rem 6rem;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 10px;
-}
-
-.about_container {
-  display: flex;
-  margin-top: 10rem;
+  margin-top: 5rem;
   position: relative;
+  padding-top: 6rem;
 }
 
 .laptop_img {
@@ -60,8 +57,8 @@
   border-radius: 50%;
   width: 13rem;
   height: 13rem;
-  top: 25rem;
-  left: 25rem;
+  top: 33rem;
+  left: 36rem;
   position: absolute;
   background-color: white;
   overflow: hidden;
@@ -70,13 +67,13 @@
 .learning_icon_circle {
   font-size: 5rem;
   position: absolute;
-  top: 27.5rem;
-  left: 28.25rem;
+  top: 35.5rem;
+  left: 39rem;
 }
 
 .btn_dark {
   padding: 15px 25px;
-  margin-top: 3.5rem;
+  margin-top: 3rem;
   border: none;
   background-color: rgb(45, 46, 50);
   border-radius: 5px;
@@ -86,8 +83,75 @@
   transition: all 0.3s;
   font-weight: 600;
   letter-spacing: 0.25px;
+  margin-bottom: 6rem;
 }
 
 .btn_dark:hover {
   background-color: #626262;
+}
+
+@media screen and (max-width: 480px) {
+  .laptop_img {
+    width: 35rem;
+    height: 35rem;
+    object-fit: cover;
+    border-radius: 15px;
+    overflow: hidden;
+    top: 0;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fffffe;
+    justify-content: center;
+    margin-left: 2rem;
+    border-radius: 10px;
+    padding-top: 0;
+  }
+
+  .learning_icon_circle {
+    font-size: 5rem;
+    position: absolute;
+    top: 38.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    left: 41%;
+  }
+  .circle_dev {
+    border-radius: 50%;
+    width: 13rem;
+    height: 13rem;
+    top: 36rem;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    background-color: white;
+    overflow: hidden;
+  }
+  .about_desc {
+    margin-top: 13.5rem;
+    width: 100vw;
+    padding: 5px 25px;
+    padding-left: 5rem;
+  }
+
+  .about_par_title {
+    font-size: 1.6rem;
+  }
+
+  .about_desc_title {
+    font-size: 1.8rem;
+  }
+
+  .about_par {
+    font-size: 1.4rem;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 2rem;
+  }
 }

@@ -1,5 +1,6 @@
 
 .navbar {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -31,7 +32,7 @@ nav .sticky {
     font-weight: 600;
 }
 
-.navbar_links {
+#navbar_links {
     text-decoration: none;
     display: flex;
     gap: 2.8rem;
@@ -50,4 +51,66 @@ nav .sticky {
 
 .nav_li:hover {
     color: #6246ea;
+}
+
+#mobile {
+    display: none;
+}
+
+#mobile i {
+    color: black;
+    margin-right: 1rem;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    #navbar_links {
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+        position: fixed;
+        top: 6rem;
+        right: -100vw;
+        width: 100vw;
+        margin-right: 0;
+        height: 100vh;
+        background-color: #2d2e32;
+        box-shadow: 0 4rem 6rem rgba(0,0,0,0.1);
+        padding: 30px 0 0 15px;
+        transition: all 0.3s;
+        overflow: hidden;
+        z-index: 999;
+    }
+
+    #navbar_links.active {
+        right: 0px;
+        transition: all 0.3s;
+        position: fixed;
+    }
+    .nav_li{
+        text-decoration: none;
+        color: #FFFFFF;
+        gap: 2rem;
+        font-size: 3.2rem;
+        font-weight: 500;
+        transition: all 0.3s;
+        cursor: pointer;
+        margin-top: 3rem;
+    }
+
+    #mobile {
+        display: block;
+        margin-right: 3rem;
+        font-size: 2rem;
+        margin-top: 1rem;
+        cursor: pointer;
+        color: #2d2e32;
+    }
+
+    #mobile i {
+        transition: all 0.3s;
+    }
 }
