@@ -1,8 +1,8 @@
 .projects {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .projects_header {
@@ -30,55 +30,94 @@
   background-color: #fffffe;
   height: 40rem;
   display: flex;
+  flex-direction: row;
   border-radius: 2rem;
   margin-top: 4rem;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
 .project_img {
-    width: 53rem;
-    height: 26rem;
-    border-radius: 15px;
-    margin-top: 6rem;
-    margin-left: 2rem;
-    object-fit: cover;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 53rem;
+  height: 26rem;
+  border-radius: 10px;
+  margin-top: 6rem;
+  margin-left: 2rem;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
 }
 
 .project_title {
-    font-size: 1.7rem;
-    color: rgb(45,46,50);
-    letter-spacing: 0.25px;
+  font-size: 1.7rem;
+  color: rgb(45, 46, 50);
+  letter-spacing: 0.25px;
 }
 
 .project_desc {
-    max-width: 32rem;
-    margin-top: 6.5rem;
-    margin-left: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  max-width: 32rem;
+  margin-top: 6.5rem;
+  margin-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .project_par {
-    font-size: 1.5rem;
-    color: gray;
-    margin-top: 1rem;
+  font-size: 1.5rem;
+  color: gray;
+  margin-top: 1rem;
+  text-align: center;
+  margin-right: 1rem;
 }
 
 .project_links {
-    display: flex;
-    margin-top: 5rem;
-    align-items: center;
-  }
+  display: flex;
+  margin-top: 5rem;
+  align-items: center;
+}
 
-  .project_github {
-    display: flex;
-    align-items: center;
-  }
+.project_github {
+  display: flex;
+  align-items: center;
+}
+
+.project_live {
+  display: flex;
+  align-items: center;
+}
 
 .links_to {
-    text-decoration: none;
-    font-size: 1.6rem;
-    color: rgb(45,46,50);
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: rgb(45, 46, 50);
+  margin-left: 1.5rem;
+}
+
+.links_to:hover {
+  color: #9656a1;
+}
+
+.code_links_img {
+  object-fit: cover;
+  width: 3rem;
+  margin-left: 0.5rem;
+  margin-top: 0.1rem;
+}
+
+.project_desc_outstock {
+  margin-top: 8rem;
+}
+
+.project_container_reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.project_image_reverse {
+  margin-right: 2rem;
+  margin-left: 0;
+}
+
+.project_desc_bank {
+  margin-top: 5.5rem;
 }

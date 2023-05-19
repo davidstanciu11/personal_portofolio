@@ -74,3 +74,20 @@
   left: 28.25rem;
 }
 
+.btn_dark {
+  padding: 15px 25px;
+  margin-top: 3.5rem;
+  border: none;
+  background-color: rgb(45, 46, 50);
+  border-radius: 5px;
+  color: rgb(247, 244, 244);
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+}
+
+.btn_dark:hover {
+  background-color: #626262;
+}

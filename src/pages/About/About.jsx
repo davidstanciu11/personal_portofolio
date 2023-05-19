@@ -1,6 +1,8 @@
 import "./About.style.css";
 import LaptopImg from "../../assets/laptop_work.jpg";
 import Icon from "../../assets/developer_icon.svg"
+import { Link } from "react-router-dom";
+
 
 function About() {
   return (
@@ -29,6 +31,7 @@ function About() {
               development conferences, and exploring new technologies to enhance
               my skills.
             </p>
+            <Link to={""}><button className="btn_dark">Download Resume</button></Link>
           </div>
         </div>
       </section>
