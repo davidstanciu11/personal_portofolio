@@ -1,7 +1,7 @@
 import "./Projects.style.css";
 import { Link } from "react-router-dom";
 import firstProject from "../../assets/firstPortofolio.png";
-import slackDesign from "../../assets/slackDesign.png";
+import slackDesign from "../../assets/slackdesign.png";
 import geolocationapp from "../../assets/SeeYa.png";
 import outstock from "../../assets/outstock.png";
 import bankapp from "../../assets/bankapp.png";
