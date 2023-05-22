@@ -2,6 +2,8 @@ import "./About.style.css";
 import LaptopImg from "../../assets/laptop_work.jpg";
 import Icon from "../../assets/developer_icon.svg"
 import CV from "../../../Stanciu-David-CV.pdf";
+import bookIcon from "../../assets/book_icon.png";
+
 
 
 function About() {
@@ -12,7 +14,7 @@ function About() {
           <div className="about_img">
             <img src={LaptopImg} alt="laptopImg" className="laptop_img" />
             <span className="circle_dev"><img src={Icon} alt="icon" className="developer_icon" /></span>
-            <span className="learning_icon_circle">📙</span>
+            <img src={bookIcon} alt="bookIcon" className="book_icon learning_icon_circle" />
           </div>
           <div className="about_desc">
             <p className="about_par_title">ABOUT ME</p>
