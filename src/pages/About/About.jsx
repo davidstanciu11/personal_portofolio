@@ -1,7 +1,7 @@
 import "./About.style.css";
 import LaptopImg from "../../assets/laptop_work.jpg";
 import Icon from "../../assets/developer_icon.svg"
-import { Link } from "react-router-dom";
+import CV from "../../../Stanciu-David-CV.pdf";
 
 
 function About() {
@@ -31,7 +31,7 @@ function About() {
               development conferences, and exploring new technologies to enhance
               my skills.
             </p>
-            <Link to={""}><button className="btn_dark">Download Resume</button></Link>
+            <a href={CV} download={CV}><button className="btn_dark">Download Resume</button></a>
           </div>
       </section>
     </>
