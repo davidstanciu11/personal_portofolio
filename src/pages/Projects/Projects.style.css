@@ -131,14 +131,40 @@
   }
 
   .project_container {
-    max-width: 100vw;
-    height: 60rem;
+    width: 39rem;
+    height: 56rem;
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
   }
   .project_img {
     width: 100vw;
+    height: auto;
+    overflow: hidden;
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .projects_header_title {
+    font-size: 1.2rem;
+  }
+  .projects_header_desc {
+    font-size: 1.4rem;
+  }
+
+  .project_container {
+    width: 70rem;
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    align-items: center;
+    
+  }
+  .project_img {
+    width: 50rem;
     height: auto;
     overflow: hidden;
     margin-top: 0;
