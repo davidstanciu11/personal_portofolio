@@ -9,8 +9,7 @@ import bookIcon from "../../assets/book_icon.png";
 function About() {
   return (
     <>
-      <section className="about" id="about">
-        
+      <section className="about" id="about" data-aos="fade-down" data-aos-delay="500">
           <div className="about_img">
             <img src={LaptopImg} alt="laptopImg" className="laptop_img" />
             <span className="circle_dev"><img src={Icon} alt="icon" className="developer_icon" /></span>

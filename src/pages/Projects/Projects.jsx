@@ -1,6 +1,5 @@
 import "./Projects.style.css";
 import { Link } from "react-router-dom";
-import firstProject from "../../assets/firstPortofolio.png";
 import slackDesign from "../../assets/slackdesign.png";
 import geolocationapp from "../../assets/SeeYa.png";
 import outstock from "../../assets/outstock.png";
@@ -8,21 +7,82 @@ import bankapp from "../../assets/bankapp.png";
 import github from "../../assets/github.png";
 import externalLink from "../../assets/external_link.png";
 import Footer from "../../components/Footer/Footer";
+import EasyMindImg from "../../assets/easyMind.png";
 
 function Projects() {
   return (
     <>
       <section className="projects" id="projects">
-        <div className="projects_header">
+        <div
+          className="projects_header"
+          data-aos="fade-down"
+          data-aos-delay="500"
+        >
           <p className="projects_header_title">PORTOFOLIO</p>
           <h3 className="projects_header_desc">
             A brief look on my journey working on Projects
           </h3>
         </div>{" "}
-        <div className="project_container">
-            <Link to={"https://outstock-react-project.netlify.app"}>
-              <img src={outstock} alt="projectPhoto" className="project_img" />
+        <div
+          className="project_container"
+          data-aos="fade-right"
+          data-aos-delay="500"
+        >
+          <div className="project_image">
+            <Link to={"https://easymind-react.netlify.app"}>
+              <img
+                src={EasyMindImg}
+                alt="projectPhoto"
+                className="project_img"
+              />
             </Link>
+          </div>
+          <div className="project_desc">
+            <h3 className="project_title">EasyMind 🧘</h3>
+            <p className="project_par">
+              EasyMind 🧘 is a soothing and immersive web application that
+              offers a serene environment for meditation and mindfulness
+              practices. Developed using <b>React</b>, a popular JavaScript library,
+              and enhanced with <b>Tailwind CSS</b>, a utility-first CSS framework.
+            </p>
+            <div className="project_links">
+              <div className="project_github">
+                <Link
+                  to={"https://github.com/davidstanciu11/meditationApp_project"}
+                  className="links_to"
+                >
+                  Code{" "}
+                </Link>
+                <Link to={"https://github.com/davidstanciu11/meditationApp_project"}>
+                  <img src={github} alt="github" className="code_links_img" />
+                </Link>
+              </div>
+              <div className="project_live">
+                <Link
+                  to={"https://easymind-react.netlify.app"}
+                  className="links_to"
+                >
+                  Live Demo
+                </Link>
+                <Link to={"https://easymind-react.netlify.app"}>
+                  <img
+                    src={externalLink}
+                    alt="externaLink"
+                    className="code_links_img"
+                  />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="project_container"
+          data-aos="fade-right"
+          data-aos-delay="500"
+        >
+          <Link to={"https://outstock-react-project.netlify.app"}>
+            <img src={outstock} alt="projectPhoto" className="project_img" />
+          </Link>
           <div className="project_desc project_desc_outstock">
             <h3 className="project_title">OutStock 🛒 </h3>
             <p className="project_par">
@@ -62,7 +122,11 @@ function Projects() {
             </div>
           </div>
         </div>
-        <div className="project_container project_container_reverse">
+        <div
+          className="project_container project_container_reverse"
+          data-aos="fade-right"
+          data-aos-delay="500"
+        >
           <div className="project_image project_image_reverse">
             <Link to={"https://bankapp-david.netlify.app"}>
               <img src={bankapp} alt="projectPhoto" className="project_img" />
@@ -107,7 +171,11 @@ function Projects() {
             </div>
           </div>
         </div>
-        <div className="project_container">
+        <div
+          className="project_container"
+          data-aos="fade-right"
+          data-aos-delay="500"
+        >
           <div className="project_image">
             <Link to={"https://geolocationapp-david.netlify.app"}>
               <img
@@ -155,7 +223,11 @@ function Projects() {
             </div>
           </div>
         </div>
-        <div className="project_container project_container_reverse">
+        <div
+          className="project_container project_container_reverse"
+          data-aos="fade-right"
+          data-aos-delay="500"
+        >
           <div className="project_image project_image_reverse">
             <Link to={"https://slackdesign-david.netlify.app"}>
               <img
@@ -174,7 +246,7 @@ function Projects() {
               development.
             </p>
             <div className="project_links">
-            <div className="project_github">
+              <div className="project_github">
                 <Link
                   to={"https://github.com/davidstanciu11/slackDesign"}
                   className="links_to"
@@ -203,56 +275,8 @@ function Projects() {
             </div>
           </div>
         </div>
-        <div className="project_container ">
-          <div className="project_image">
-            <Link to={"https://firstportofolio-davidst.netlify.app"}>
-              <img
-                src={firstProject}
-                alt="projectPhoto"
-                className="project_img"
-              />
-            </Link>
-          </div>
-          <div className="project_desc">
-            <h3 className="project_title">First Portofolio 💼</h3>
-            <p className="project_par">
-              In my first portofolio project I learned how to master <b>HTML</b>
-              ,<b>CSS</b> and <b>Javasript</b>.Throughout the development
-              process, I have encountered various challenges and learned how to
-              troubleshoot and debug issues in my code.
-            </p>
-            <div className="project_links">
-              <div className="project_github">
-                <Link
-                  to={"https://github.com/davidstanciu11/firstPortofolio"}
-                  className="links_to"
-                >
-                  Code{" "}
-                </Link>
-                <Link to={"https://github.com/davidstanciu11/firstPortofolio"}>
-                  <img src={github} alt="github" className="code_links_img" />
-                </Link>
-              </div>
-              <div className="project_live">
-                <Link
-                  to={"https://firstportofolio-davidst.netlify.app"}
-                  className="links_to"
-                >
-                  Live Demo
-                </Link>
-                <Link to={"https://firstportofolio-davidst.netlify.app"}>
-                  <img
-                    src={externalLink}
-                    alt="externaLink"
-                    className="code_links_img"
-                  />
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
       </section>
-      <Footer/>
+      <Footer />
     </>
   );
 }

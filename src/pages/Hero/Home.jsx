@@ -12,13 +12,13 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <>
-      <section className="home_section" id="home">
+      <section className="home_section" id="home" data-aos="fade-down" data-aos-delay="500">
         <div className="container">
           <div className="content">
             <div className="main_content">
               <div className="home_description">
-                <h1 className="hero_title">Front-End Developer</h1>
-                <p className="hero_par">
+                <h1 className="hero_title" >Front-End Developer</h1>
+                <p className="hero_par"  >
                   Hi, I&#39;m David Stanciu. A passionate Front-End Developer
                   based in Bucharest, Romania. 📍
                 </p>
@@ -30,10 +30,11 @@ function Home() {
                       src={LinkedinIcon}
                       alt="Linkedinicon"
                       className="profileLinks"
+                      
                     />
                   </Link>
                   <Link to={"https://github.com/davidstanciu11"}>
-                    <img src={Github} alt="github" className="profileLinks" />
+                    <img src={Github} alt="github" className="profileLinks"  />
                   </Link>
                 </div>
               </div>
@@ -42,6 +43,7 @@ function Home() {
                   src={ProfilePic}
                   alt="profilePicture"
                   className="profile_pic"
+                 
                 />
               </div>
             </div>
@@ -49,7 +51,7 @@ function Home() {
               <h3 className="tech_names">
                 Tech Stack <span className="line_tech">|</span>
               </h3>
-              <div className="tech_icons_flex">
+              <div className="tech_icons_flex"  >
               <img src={html} alt="htmlIcon"className="tech_icon"/>
               <img src={CSS} alt="cssIcon"className="tech_icon"/>
               <img src={js} alt="jsIcon"className="tech_icon"/>

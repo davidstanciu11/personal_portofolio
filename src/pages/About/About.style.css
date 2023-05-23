@@ -92,7 +92,7 @@
 
 @media screen and (max-width: 480px) {
   .laptop_img {
-    width: 35rem;
+    width: 100vw;
     height: 35rem;
     object-fit: cover;
     border-radius: 15px;
